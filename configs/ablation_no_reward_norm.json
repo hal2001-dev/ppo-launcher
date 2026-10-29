@@ -1,0 +1,5 @@
+{
+  "_description": "보상 정규화 제거: NormalizeReward(+±10 clip) 래퍼 미사용 (원시 보상으로 학습). 나머지는 default.json",
+  "exp_name": "ppo_no_reward_norm",
+  "norm_reward": false
+}

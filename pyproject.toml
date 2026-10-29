@@ -1,0 +1,24 @@
+[project]
+name = "ppo-lunarlander"
+version = "0.1.0"
+description = "PPO from scratch on LunarLander-v3 (SB3 baseline → CleanRL reading → re-implementation)"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "gymnasium[box2d]>=1.1,<2",
+    "torch>=2.2,<3",
+    "numpy>=1.26",
+    "tensorboard>=2.15",
+    "stable-baselines3>=2.4,<3",
+    "tyro>=0.8",
+]
+
+[dependency-groups]
+dev = ["pytest>=8"]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

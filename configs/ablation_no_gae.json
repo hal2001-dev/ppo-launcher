@@ -1,0 +1,5 @@
+{
+  "_description": "GAE 제거: λ 가중 없이 부트스트랩 몬테카를로 리턴 A_t = G_t - V(s_t) (= λ 1.0). 나머지는 default.json",
+  "exp_name": "ppo_no_gae",
+  "use_gae": false
+}

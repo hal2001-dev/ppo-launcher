@@ -1,0 +1,11 @@
+{
+  "_description": "CleanRL ppo.py 원본 기본값과 동일 (4x128, γ0.99, λ0.95, 가치 클리핑 on, 보상 정규화 없음, 1M). ppo_annotated.py 와 곡선 비교용",
+  "exp_name": "ppo_cleanrl_match",
+  "total_timesteps": 1000000,
+  "num_steps": 128,
+  "num_minibatches": 4,
+  "gamma": 0.99,
+  "gae_lambda": 0.95,
+  "clip_vloss": true,
+  "norm_reward": false
+}

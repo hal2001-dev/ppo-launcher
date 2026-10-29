@@ -1,0 +1,5 @@
+{
+  "_description": "클리핑 제거: 정책 surrogate = ratio*A (비클리핑). 가치 손실 클리핑은 기본값부터 off",
+  "exp_name": "ppo_no_clip",
+  "clip_policy": false
+}
