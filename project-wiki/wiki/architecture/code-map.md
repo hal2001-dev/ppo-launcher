@@ -9,10 +9,10 @@
 
 ```mermaid
 flowchart LR
-  A[envs.reset seed] --> B["(1) 롤아웃<br/>RolloutBuffer.add × 128"]
+  A[envs.reset seed] --> B["(1) 롤아웃<br/>RolloutBuffer.add × 1024"]
   B --> C["(2) compute_gae<br/>A, R = A + V"]
-  C --> D["flatten (512,)"]
-  D --> E["(3) ppo_update<br/>4 epoch × 4 minibatch"]
+  C --> D["flatten (4096,)"]
+  D --> E["(3) ppo_update<br/>4 epoch × 32 minibatch"]
   E -->|LR anneal| B
   E --> F[TensorBoard<br/>charts/* losses/*]
   E -->|종료| G["models/*.pt → evaluate (argmax 100ep)"]

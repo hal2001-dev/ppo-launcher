@@ -6,7 +6,7 @@
 | 용어 | 뜻 | 코드/지표 |
 |---|---|---|
 | **PPO** | Proximal Policy Optimization. 중요도 비율을 [1-ε, 1+ε] 로 클리핑해 한 번의 업데이트에서 정책이 너무 멀리 가지 않게 하는 on-policy 정책 경사법 | `ppo_update` |
-| **롤아웃 (rollout)** | 현재 정책으로 N 개 환경 × T 스텝 수집한 전이 묶음. 여기선 4×128 = 512 | `RolloutBuffer` |
+| **롤아웃 (rollout)** | 현재 정책으로 N 개 환경 × T 스텝 수집한 전이 묶음. 여기선 4×1024 = 4096 (기본값, EXP-007 이전엔 4×128) | `RolloutBuffer` |
 | **iteration** | 롤아웃 1회 + 업데이트 1회. `total_timesteps // (num_envs*num_steps)` 회 | `train` |
 | **어드밴티지 A(s,a)** | 그 행동이 평균(V(s))보다 얼마나 나았는가. 정책 경사의 가중치 | `advantages` |
 | **TD 오차 δ** | r + γV(s') − V(s). 1-스텝 어드밴티지 추정 | `compute_gae` 내부 `delta` |

@@ -47,7 +47,9 @@ project-wiki/
     ├── deployment/
     │   ├── ports.md                ← PORTS.md 배정(TensorBoard 3005)
     │   └── runbook.md              ← 학습/평가/TensorBoard 실행 절차
-    ├── onboarding/setup.md
+    ├── onboarding/
+    │   ├── setup.md
+    │   └── rl-primer.md            ← 강화학습 입문 (src/ppo.py 기준 개념 설명)
     ├── troubleshooting/common.md
     ├── meetings/  reviews/
     └── issues/{open,resolved}/

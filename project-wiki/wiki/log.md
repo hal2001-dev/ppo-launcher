@@ -2,6 +2,12 @@
 
 최신 항목을 위에 추가. 학습 프로젝트이므로 **무엇을 왜 했고 무엇이 실패했는지**까지 남긴다.
 
+## [2026-10-29] docs | 강화학습 입문 페이지 + git 원격 연결
+- 영향받은 페이지: onboarding/rl-primer.md(신규), index.md, ../CLAUDE.md(디렉토리 트리), glossary.md, architecture/code-map.md
+- 주요 변경: 대화에서 설명한 "src/ppo.py 기준 강화학습 설명"을 위키 페이지로 저장. 개념 ↔ 코드 줄 번호(커밋 `1dfb668`) ↔ 실험 근거 연결.
+- git: `git init` → 첫 커밋 `1dfb668` → `git@github.com:hal2001-dev/ppo-launcher.git` main push. runs/·models/·.venv/ 는 .gitignore 로 제외.
+- 수정: glossary.md 롤아웃 항목, code-map.md mermaid 가 구 기본값(4×128, 512, 미니배치 4개) 표기 → 4×1024, 4096, 미니배치 32개로 갱신.
+
 ## [2026-10-28] docs | 위키 정리 + PRD 판정
 - 영향받은 페이지: overview.md, index.md, experiments/results.md, roadmap.md, changelog.md, decisions.md(ADR-005 갱신), ISSUE-001(10단계)
 - 주요 변경: PRD 성공 기준 전 항목 ✅ 판정표 작성. 모델/run 을 최종 · `_tuning/`(47개) · `_superseded/` 로 정리.

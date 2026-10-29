@@ -1,10 +1,10 @@
 # Wiki Index — PPO LunarLander
 
 **상태**: active
-**마지막 업데이트**: 2026-10-28
+**마지막 업데이트**: 2026-10-29
 
 전체 위키 페이지 카탈로그. 새 페이지 생성 시 반드시 여기에 등록.
-처음 읽는다면: [overview.md](overview.md) → [issues/resolved/ISSUE-001.md](issues/resolved/ISSUE-001.md) → 실험 EXP-001 부터 순서대로.
+처음 읽는다면: [overview.md](overview.md) → [onboarding/rl-primer.md](onboarding/rl-primer.md) → [issues/resolved/ISSUE-001.md](issues/resolved/ISSUE-001.md) → 실험 EXP-001 부터 순서대로.
 
 ## 핵심 (Core)
 - [overview.md](overview.md) — 프로젝트 요약 + 현재 상태 + 배운 것 + 할 일
@@ -46,6 +46,7 @@
 - [deployment/ports.md](deployment/ports.md) — TensorBoard 3005 (PORTS.md)
 - [deployment/runbook.md](deployment/runbook.md) — 학습/평가/제거 실험/TensorBoard 명령
 - [onboarding/setup.md](onboarding/setup.md) — 설치 + 검증
+- [onboarding/rl-primer.md](onboarding/rl-primer.md) — ★ 강화학습 입문: src/ppo.py 로 읽는 PPO (Actor-Critic, GAE, 클리핑, 지표, 제거 실험 교훈)
 - [troubleshooting/common.md](troubleshooting/common.md) — 설치·학습·도구 문제
 
 ## 레포 산출물 (위키 밖)
